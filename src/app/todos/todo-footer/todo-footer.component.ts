@@ -29,6 +29,7 @@ export class TodoFooterComponent implements OnInit {
   cambiarFiltro( filtro: actionsFiltros.filtrosValidos ){
     this.store.dispatch( actionsFiltros.setFiltro({ filtro }));
   }
+
   limpiarCompletados(){
     this.store.dispatch( actionsTodos.limpiarCompletados() )
   }
